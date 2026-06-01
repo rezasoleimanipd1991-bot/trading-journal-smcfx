@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "smcfx.journal",
+    "slug": "trader-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "trader-pro",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080e1c"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "برای تایپ صوتی به دسترسی میکروفون نیاز است",
+        "NSMicrophoneUsageDescription": "برای تایپ صوتی به دسترسی میکروفون نیاز است"
+      }
+    },
+    "android": {
+      "permissions": [
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-document-picker"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
